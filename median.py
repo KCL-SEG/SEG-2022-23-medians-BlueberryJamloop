@@ -20,7 +20,10 @@ while True:
         finalMedian = median_func(numbers, count)
     except ValueError:
         print("Some input could not be converted to a number!")
+    except EOFError:
+        print("End of line")
     finally:
         print(numbers)
         print(count)
-        print(median_func(numbers, count))
+        print(finalMedian)
+        break

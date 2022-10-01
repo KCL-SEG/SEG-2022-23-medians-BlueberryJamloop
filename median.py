@@ -4,6 +4,7 @@ count = 0
 numbers = []
 
 def median_func(numbers, count):
+    numbers.sort()
     if count % 2 != 0:
         return(numbers[(count//2)])
     else:
